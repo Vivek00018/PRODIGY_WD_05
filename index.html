@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="weather-container">
+        <!-- Background animations -->
+        <div class="background-animation"></div>
+
+        <!-- Weather card -->
+        <div class="card">
+            <h1 class="app-heading">🌤 Weather App</h1>
+
+            <!-- Search -->
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter a city name" spellcheck="false">
+                <button id="search-btn"><img src="images/search.png" alt="search"></button>
+                <button id="locate-btn"><img src="images/location.png" alt="location"></button>
+            </div>
+
+            <!-- Error -->
+            <div class="error-message">
+                <p>❌ Invalid city name. Please try again.</p>
+            </div>
+
+            <!-- Weather display -->
+            <div class="weather-display">
+                <div class="weather-icon-container"></div>
+                <h1 class="temp">--°C</h1>
+                <p class="feels-like">Feels like: --°C</p>
+                <h2 class="city">City Name</h2>
+                <p class="description">Weather condition</p>
+
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <img src="images/humidity.png" alt="">
+                        <div>
+                            <p class="humidity">--%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <img src="images/wind.png" alt="">
+                        <div>
+                            <p class="wind">-- km/h</p>
+                            <p>Wind</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <img src="images/pressure.png" alt="">
+                        <div>
+                            <p class="pressure">-- hPa</p>
+                            <p>Pressure</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <img src="images/visibility.png" alt="">
+                        <div>
+                            <p class="visibility">-- km</p>
+                            <p>Visibility</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <img src="images/sunrise.png" alt="">
+                        <div>
+                            <p class="sunrise">--:--</p>
+                            <p>Sunrise</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <img src="images/sunset.png" alt="">
+                        <div>
+                            <p class="sunset">--:--</p>
+                            <p>Sunset</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
